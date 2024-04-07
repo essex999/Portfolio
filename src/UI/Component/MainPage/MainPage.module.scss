@@ -1,0 +1,48 @@
+.main {
+	height: 100vh;
+
+	background-color: #ffffff;
+	display: flex;
+}
+
+.header {
+	height: 100%;
+
+	background-color: #b6d0db;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 80px;
+	width: 322px;
+	position: fixed;
+}
+
+.mainContainer {
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	margin-top: 100px;
+}
+
+.img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+.basicUserInfo {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.page {
+	position: relative;
+	margin-left: 322px;
+	width: 100%;
+}
+
+.textWrap {
+	text-wrap: nowrap;
+}
