@@ -44,8 +44,5 @@
   margin-left: 382px;
   width: 100%;
   flex-direction: column;
-}
-
-.textWrap {
-  text-wrap: nowrap;
+  overflow: auto;
 }
