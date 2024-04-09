@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { AboutMe } from "../UI/Screens/AboutMe/AboutMe";
-import { Resume } from "../UI/Component/Resume/Resume";
+import { Resume } from "../UI/Screens/Resume/Resume";
 import { Contact } from "../UI/Screens/Contact/Contact";
 import { Portfolio } from "../UI/Screens/Portfolio/Portfolio";
 import { App } from "../App";
