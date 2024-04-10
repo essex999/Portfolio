@@ -1,6 +1,6 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./NavButton.module.scss";
-import { useNavigate, useSubmit } from "react-router-dom";
+import { useHref, useNavigate, useSubmit } from "react-router-dom";
 
 export const NavButton = ({
   textContent,
@@ -8,14 +8,32 @@ export const NavButton = ({
   selectedButton,
 }) => {
   const buttonRef = useRef(null);
+  const path = useHref();
 
   const [isHover, setIsHover] = useState(false);
-  const [currentTextContent, setcurrentTextContent] = useState("");
+  const [currentTextContent, setcurrentTextContent] = useState(" ");
 
   const convertToParam = (str) => {
     return str.split(" ").join("").toLowerCase();
   };
 
+  const getPath = () => {
+    return path
+      .split("")
+      .map((el, index) => {
+        if (el === "/") {
+          return;
+        } else if (index === 1) {
+          return el.toUpperCase();
+        } else return el;
+      })
+      .join("");
+  };
+
+  useEffect(() => {
+    setcurrentTextContent(buttonRef.current.textContent);
+    setSelectedButton(getPath());
+  }, []);
   const navigate = useNavigate();
   return (
     <form
