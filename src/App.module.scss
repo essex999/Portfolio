@@ -1,6 +1,7 @@
 .main {
   background-color: #0d1b2a;
   display: flex;
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
