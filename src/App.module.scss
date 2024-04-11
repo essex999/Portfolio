@@ -1,6 +1,4 @@
 .main {
-  height: 100vh;
-
   background-color: #0d1b2a;
   display: flex;
   @media (max-width: 768px) {
@@ -44,7 +42,6 @@
 }
 
 .mainContainer {
-  background-color: white;
   height: auto;
   margin-top: 100px;
   background-color: #778da9;
@@ -84,7 +81,7 @@
   margin-left: 382px;
   width: 100%;
   flex-direction: column;
-
+  min-height: 100%;
   @media (max-width: 1600px) {
     margin-left: 322px;
   }
@@ -97,7 +94,6 @@
   }
   @media (max-width: 768px) {
     margin-left: 0px;
-    height: 100vh;
   }
 }
 .text {
