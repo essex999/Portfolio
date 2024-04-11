@@ -8,14 +8,12 @@
   font-style: normal;
   margin: 0px;
   padding: 0px;
-  background-color: #0d1b2a;
-  height: 100vh;
 }
 
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #778da9;
+  background-color: green;
   height: 100%;
   width: 100%;
 }
