@@ -39,23 +39,19 @@
     justify-content: center;
   }
   @media (min-width: 769px) {
-    margin-top: 20vh;
+    padding-top: 20vh;
   }
 }
 
 .mainContainer {
   background-color: white;
-  height: 100%;
-
+  height: auto;
   margin-top: 100px;
   background-color: #778da9;
   padding: 20px;
-  overflow: auto;
+
   @media (max-width: 768px) {
     margin-top: 0px;
-
-    height: 100%;
-    overflow: hidden;
   }
 }
 
