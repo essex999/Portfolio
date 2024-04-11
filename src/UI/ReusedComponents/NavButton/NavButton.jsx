@@ -11,13 +11,16 @@ export const NavButton = ({
   const path = useHref();
 
   const [isHover, setIsHover] = useState(false);
-  const [currentTextContent, setcurrentTextContent] = useState(" ");
+  const [currentTextContent, setcurrentTextContent] = useState("");
 
   const convertToParam = (str) => {
     return str.split(" ").join("").toLowerCase();
   };
 
   const getPath = () => {
+    if (path === "/aboutme") {
+      return "About me";
+    }
     return path
       .split("")
       .map((el, index) => {
@@ -33,6 +36,7 @@ export const NavButton = ({
   useEffect(() => {
     setcurrentTextContent(buttonRef.current.textContent);
     setSelectedButton(getPath());
+    console.log(getPath());
   }, []);
   const navigate = useNavigate();
   return (
