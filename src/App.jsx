@@ -9,7 +9,7 @@ export const App = ({ childComponent: ChildComponent }) => {
 
 	const handleSetDisplayHeader = cords => {
 		if (window.innerWidth < 769) {
-			cords === 0 ? setIsScrollToBot(false) : setIsScrollToBot(true)
+			cords === 2 ? setIsScrollToBot(false) : setIsScrollToBot(true)
 		} else return
 	}
 	return (
