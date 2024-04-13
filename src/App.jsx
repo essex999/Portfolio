@@ -18,7 +18,6 @@ export const App = ({ childComponent: ChildComponent }) => {
 						className={styles.mainContainer}
 					>
 						<ChildComponent />
-						scrollData
 					</main>
 				</div>
 			</div>

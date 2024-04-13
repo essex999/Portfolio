@@ -4,8 +4,12 @@ import IconFacebook from '../../ReusedComponents/Icons/FbIcon'
 import IconGithub from '../../ReusedComponents/Icons/GitIcon'
 import IconTelegram from '../../ReusedComponents/Icons/TelegramIcon'
 
+import { Link } from 'react-router-dom'
 import styles from './Header.module.scss'
 export const Header = () => {
+	const telegramLink = 'https://t.me/ixt13'
+	const gitLink = 'https://github.com/essex999'
+	const faceBookLink = 'https://www.facebook.com/okch97'
 	const [isClasss, setIsClass] = useState(null)
 
 	const [isShowMobileHeader, setShowMobileHeader] = useState(false)
@@ -37,9 +41,15 @@ export const Header = () => {
 							<h2 className={styles.text}>Web Developer</h2>
 						</div>
 						<div className={styles.socialsContainer}>
-							<IconFacebook className={styles.icon} />
-							<IconGithub className={styles.icon} />
-							<IconTelegram className={styles.icon} />
+							<Link to={faceBookLink} target='_blank' rel='noopener noreferrer'>
+								<IconFacebook className={styles.icon} />
+							</Link>
+							<Link to={gitLink} target='_blank' rel='noopener noreferrer'>
+								<IconGithub className={styles.icon} />
+							</Link>
+							<Link to={telegramLink} target='_blank' rel='noopener noreferrer'>
+								<IconTelegram className={styles.icon} />
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -51,9 +61,15 @@ export const Header = () => {
 					</div>
 					<img className={styles.img} src={avatar} />
 					<div className={`${styles.socialsContainer} ${styles.visible}`}>
-						<IconFacebook className={styles.icon} />
-						<IconGithub className={styles.icon} />
-						<IconTelegram className={styles.icon} />
+						<Link to={faceBookLink} target='_blank' rel='noopener noreferrer'>
+							<IconFacebook className={styles.icon} />
+						</Link>
+						<Link to={gitLink} target='_blank' rel='noopener noreferrer'>
+							<IconGithub className={styles.icon} />
+						</Link>
+						<Link to={telegramLink} target='_blank' rel='noopener noreferrer'>
+							<IconTelegram className={styles.icon} />
+						</Link>
 					</div>
 				</div>
 			)}

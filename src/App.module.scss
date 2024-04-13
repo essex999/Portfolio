@@ -9,25 +9,30 @@
 
 .mainContainer {
 	padding: 20px;
-	background-color: #ffcad4;
+	background-color: #fae1dd;
+	background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
+	margin-top: 60px;
+	overflow: auto;
+	@media (max-width: 1280px) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 
 	@media (max-width: 768px) {
 		margin-top: 0px;
 	}
-	@media (min-width: 768px) {
-		margin-top: 70px;
-		overflow: auto;
-	}
 }
 
 .page {
+	background-color: #fae1dd;
+	background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
 	display: flex;
 	position: relative;
 	margin-left: 382px;
 	width: 100%;
 	height: 100%;
 	flex-direction: column;
-	background-color: #ffcad4;
+
 	@media (max-width: 1600px) {
 		margin-left: 322px;
 	}

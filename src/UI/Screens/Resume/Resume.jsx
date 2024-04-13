@@ -1,7 +1,7 @@
 export const Resume = () => {
-  return (
-    <>
-      <div>Resume</div>
-    </>
-  );
-};
+	return (
+		<>
+			<div>Resume</div>
+		</>
+	)
+}
