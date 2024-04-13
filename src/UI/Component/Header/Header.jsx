@@ -7,7 +7,6 @@ import IconTelegram from '../../ReusedComponents/Icons/TelegramIcon'
 import styles from './Header.module.scss'
 export const Header = () => {
 	const [isClasss, setIsClass] = useState(null)
-	const sizes = { heigth: '2em', width: '2em' }
 
 	const [isShowMobileHeader, setShowMobileHeader] = useState(false)
 
@@ -33,28 +32,14 @@ export const Header = () => {
 					<img className={styles.img} src={avatar} />
 
 					<div className={styles.headerAdditionalInfo}>
-						<div className={`${styles.basicUserInfo} ${styles.visible}`}>
+						<div className={styles.basicUserInfo}>
 							<h1 className={styles.text}>Ceban Octavian</h1>
 							<h2 className={styles.text}>Web Developer</h2>
 						</div>
-						<div className={`${styles.socialsContainer} ${styles.visible}`}>
-							<IconFacebook
-								onMouseEnter={e => setIsClass(true)}
-								onMouseLeave={e => setIsClass(false)}
-								className={styles.icon}
-								heigth={sizes.heigth}
-								width={sizes.width}
-							/>
-							<IconGithub
-								className={styles.icon}
-								heigth={sizes.heigth}
-								width={sizes.width}
-							/>
-							<IconTelegram
-								className={styles.icon}
-								heigth={sizes.heigth}
-								width={sizes.width}
-							/>
+						<div className={styles.socialsContainer}>
+							<IconFacebook className={styles.icon} />
+							<IconGithub className={styles.icon} />
+							<IconTelegram className={styles.icon} />
 						</div>
 					</div>
 				</div>
@@ -66,23 +51,9 @@ export const Header = () => {
 					</div>
 					<img className={styles.img} src={avatar} />
 					<div className={`${styles.socialsContainer} ${styles.visible}`}>
-						<IconFacebook
-							onMouseEnter={e => setIsClass(true)}
-							onMouseLeave={e => setIsClass(false)}
-							className={styles.icon}
-							heigth={sizes.heigth}
-							width={sizes.width}
-						/>
-						<IconGithub
-							className={styles.icon}
-							heigth={sizes.heigth}
-							width={sizes.width}
-						/>
-						<IconTelegram
-							className={styles.icon}
-							heigth={sizes.heigth}
-							width={sizes.width}
-						/>
+						<IconFacebook className={styles.icon} />
+						<IconGithub className={styles.icon} />
+						<IconTelegram className={styles.icon} />
 					</div>
 				</div>
 			)}

@@ -1,16 +1,13 @@
 .text {
 	margin: 0px;
-	@media (max-width: 768px) {
-		font-size: 16px;
-	}
 	@media (max-width: 1300px) {
 		font-size: 29px;
 	}
 	@media (max-width: 900px) {
 		font-size: 24px;
 	}
-	@media (max-width: 320px) {
-		font-size: 10px;
+	@media (max-width: 768px) {
+		font-size: 16px;
 	}
 }
 .basicUserInfo {
@@ -89,9 +86,15 @@
 }
 .icon {
 	transition: all 0.1s ease;
+	height: 2em;
+	width: 2em;
 	&:hover {
 		cursor: pointer;
 		transform: scale(1.2);
+	}
+	@media (max-width: 550px) {
+		height: 1.5em;
+		width: 1.5em;
 	}
 }
 
