@@ -1,0 +1,24 @@
+.aboutMeTextContent {
+}
+.textContainer {
+  background-color: #fae1dd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  @media (min-width: 769px) {
+    width: 65%;
+  }
+}
+
+.icon {
+  fill: #4a5759;
+  height: 30px;
+  width: 30px;
+}
+.inconsGroup {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
