@@ -17,7 +17,7 @@ export const AboutMe = () => {
   return (
     <>
       <div className={styles.textContainer}>
-        <p className={styles.aboutMeTextContent}>{aboutMeTextContent}</p>
+        <p className={styles.textContent}>{aboutMeTextContent}</p>
         <div className={styles.inconsGroup}>
           <IconReact className={styles.icon} />
           <IconHtml className={styles.icon} />
@@ -30,7 +30,7 @@ export const AboutMe = () => {
         </div>
       </div>
       <div className={styles.textContainer}>
-        <p className={styles.aboutMeTextContent}>{aboutMeQualities}</p>
+        <p className={styles.textContent}>{aboutMeQualities}</p>
       </div>
     </>
   );

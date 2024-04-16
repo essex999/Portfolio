@@ -1,10 +1,12 @@
-.aboutMeTextContent {
+.textContent {
+  font-size: 20px;
 }
 .textContainer {
   background-color: #fae1dd;
   border-radius: 10px;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 40px;
+
   @media (min-width: 769px) {
     width: 65%;
   }
