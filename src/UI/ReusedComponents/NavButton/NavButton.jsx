@@ -14,26 +14,33 @@ export const NavButton = ({
   const [isHover, setIsHover] = useState(false);
   const [currentTextContent, setcurrentTextContent] = useState("");
 
-  const convertToParam = (str) => {
-    return str.split(" ").join("").toLowerCase();
+  const convertStr = (str) => {
+    if (str === "/Portfolio/") {
+      return "aboutme";
+    } else
+      return str
+        .toLowerCase()
+        .split("/")
+        .slice(-1)
+        .join("")
+        .split(" ")
+        .join("");
   };
 
-  const getPath = () => {};
-
   useEffect(() => {
-    setcurrentTextContent(buttonRef.current.textContent);
-    console.log(buttonRef.current.textContent);
-    setSelectedButton(getPath());
-  }, []);
+    setcurrentTextContent(convertStr(buttonRef.current.textContent));
+
+    setSelectedButton(convertStr(path));
+  }, [path, selectedButton, setSelectedButton]);
   const navigate = useNavigate();
   return (
     <form
       ref={buttonRef}
       onSubmit={(e) => {
         e.preventDefault();
-        setcurrentTextContent(e.target.textContent.toLowerCase());
-        setSelectedButton(e.target.textContent.toLowerCase());
-        navigate(`${basePatchPrefix}${convertToParam(e.target.textContent)}`);
+        setcurrentTextContent(convertStr(e.target.textContent));
+        setSelectedButton(convertStr(e.target.textContent));
+        navigate(`${basePatchPrefix}${convertStr(e.target.textContent)}`);
       }}
       onMouseEnter={() => {
         setIsHover(true);
@@ -47,11 +54,10 @@ export const NavButton = ({
 
       <div
         onClick={() => {
-          setcurrentTextContent(buttonRef.current.textContent);
-          setSelectedButton(buttonRef.current.textContent);
-
+          setcurrentTextContent(convertStr(buttonRef.current.textContent));
+          setSelectedButton(convertStr(buttonRef.current.textContent));
           navigate(
-            `${basePatchPrefix}${convertToParam(buttonRef.current.textContent)}`,
+            `${basePatchPrefix}${convertStr(buttonRef.current.textContent)}`,
           );
         }}
         className={`${styles.underline} ${
