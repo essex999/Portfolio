@@ -10,7 +10,7 @@ export const NavButton = ({
 }) => {
   const buttonRef = useRef(null);
   const path = useHref();
-  console.log(path);
+
   const [isHover, setIsHover] = useState(false);
   const [currentTextContent, setcurrentTextContent] = useState("");
 
@@ -18,26 +18,12 @@ export const NavButton = ({
     return str.split(" ").join("").toLowerCase();
   };
 
-  const getPath = () => {
-    if (path === "/aboutme") {
-      return "About me";
-    }
-    return path
-      .split("")
-      .map((el, index) => {
-        if (el === "/") {
-          return;
-        } else if (index === 1) {
-          return el.toUpperCase();
-        } else return el;
-      })
-      .join("");
-  };
+  const getPath = () => {};
 
   useEffect(() => {
     setcurrentTextContent(buttonRef.current.textContent);
+    console.log(buttonRef.current.textContent);
     setSelectedButton(getPath());
-    console.log(getPath());
   }, []);
   const navigate = useNavigate();
   return (
@@ -45,11 +31,8 @@ export const NavButton = ({
       ref={buttonRef}
       onSubmit={(e) => {
         e.preventDefault();
-        setcurrentTextContent(e.target.textContent);
-        setSelectedButton(e.target.textContent);
-        console.log(
-          `${basePatchPrefix}${convertToParam(e.target.textContent)}`,
-        );
+        setcurrentTextContent(e.target.textContent.toLowerCase());
+        setSelectedButton(e.target.textContent.toLowerCase());
         navigate(`${basePatchPrefix}${convertToParam(e.target.textContent)}`);
       }}
       onMouseEnter={() => {
@@ -64,11 +47,12 @@ export const NavButton = ({
 
       <div
         onClick={() => {
-          console.log(buttonRef.current.textContent);
-
           setcurrentTextContent(buttonRef.current.textContent);
           setSelectedButton(buttonRef.current.textContent);
-          navigate(`/${convertToParam(buttonRef.current.textContent)}`);
+
+          navigate(
+            `${basePatchPrefix}${convertToParam(buttonRef.current.textContent)}`,
+          );
         }}
         className={`${styles.underline} ${
           isHover && selectedButton !== currentTextContent ? styles.hover : ""
