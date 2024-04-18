@@ -10,7 +10,6 @@ export const Header = () => {
   const telegramLink = "https://t.me/ixt13";
   const gitLink = "https://github.com/essex999";
   const faceBookLink = "https://www.facebook.com/okch97";
-  const [isClasss, setIsClass] = useState(null);
 
   const [isShowMobileHeader, setShowMobileHeader] = useState(false);
 

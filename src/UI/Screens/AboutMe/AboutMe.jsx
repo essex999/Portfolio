@@ -17,6 +17,9 @@ export const AboutMe = () => {
   return (
     <>
       <div className={styles.textContainer}>
+        <div className={styles.sticker}>
+          <p className={styles.stickerText}>General</p>
+        </div>
         <p className={styles.textContent}>{aboutMeTextContent}</p>
         <div className={styles.inconsGroup}>
           <IconReact className={styles.icon} />
@@ -30,6 +33,9 @@ export const AboutMe = () => {
         </div>
       </div>
       <div className={styles.textContainer}>
+        <div className={styles.sticker}>
+          <p className={styles.stickerText}>Qualities</p>
+        </div>
         <p className={styles.textContent}>{aboutMeQualities}</p>
       </div>
     </>
