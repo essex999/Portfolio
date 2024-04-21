@@ -1,53 +1,42 @@
 .textContent {
-  font-size: 20px;
-  padding: 20px;
+	font-size: 16px;
+	padding: 20px;
 
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-  @media (max-width: 550px) {
-    font-size: 14px;
-  }
+	@media (max-width: 768px) {
+		font-size: 16px;
+	}
+	@media (max-width: 550px) {
+		font-size: 14px;
+	}
 }
 .textContainer {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #fae1dd;
-  border-radius: 10px;
-  margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #fae1dd;
+	border-radius: 10px;
+	margin-bottom: 20px;
 
-  @media (min-width: 769px) {
-    width: 100%;
-  }
-  @media (min-width: 1000px) {
-    width: 70%;
-  }
+	@media (min-width: 769px) {
+		width: 100%;
+	}
+	@media (min-width: 1000px) {
+		width: 70%;
+	}
 }
 
-.icon {
-  fill: #4a5759;
-  height: 30px;
-  width: 30px;
-}
-.inconsGroup {
-  padding-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
 .sticker {
-  border-radius: 0px 5px 5px 0px;
-  background-image: url("https://www.transparenttextures.com/patterns/diagonal-noise.png");
-  display: inline-block;
+	color: #313a3c;
+	border-radius: 0px 5px 5px 0px;
+	background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
+	display: inline-block;
 }
 
 .stickerText {
-  padding: 10px 20px 10px 20px;
-  font-size: 18px;
+	padding: 5px 10px 5px 10px;
+	font-size: 16px;
 
-  @media (max-width: 769px) {
-    padding: 5px 10px 5px 10px;
-    font-size: 13px;
-  }
+	@media (max-width: 769px) {
+		padding: 5px 10px 5px 10px;
+		font-size: 13px;
+	}
 }
