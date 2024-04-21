@@ -7,3 +7,15 @@ export const aboutMeQualities = [
 export const aboutMeTextContent = [
 	'Hi , i am Octavian , year and a half ago, i embarked on my journey into web development by enrolling in Skypro school. Since then, I’ve been actively expanding my knowledge, self-learning various technologies. My toolkit includes HTML, CSS, SCSS, JavaScript, along with libraries and frameworks such as React.js, Axios, Redux, and React Query. I have experience in developing single-page applications, available on my GitHub page. Additionally, I’ve worked with databases, creating them using Node.js, Express.js, and MongoDB. I’m passionately dedicated to crafting high-quality web projects and continuously strive to enhance my skills.',
 ]
+
+export const studiesTextContent = [
+	'&#10148  College of Microelectronics and Computerized Engineering 2013-2017 <br> <small>Speciality -          Telecommunications</small>',
+
+	'&#10148 Web Development in Online School <b> <a href="https://sky.pro/" target="new blank">SkyPro</a> </b>2022-2023 (12 month)',
+]
+
+export const workExperienceTextContent = [
+	'&#10148 Orange Store B2C Sales Administrator/Consultant 2018-2021 <br> <small> Responsibilities - Consultation on IT, GSM products, and Orange services, motivate and assessed subordinates knowledge within the store, maintained and arranged products according to standards.<small>',
+
+	'&#10148  Dita Estfarm PC Operator (1C , Emails, MsOffice) 2021-Present <br> <small> Responsibilities - Operated using the 1C program, invoiced, maintained records, and dispensed medications to legal entities.</small>',
+]
