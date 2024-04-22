@@ -11,12 +11,7 @@ export const App = ({ childComponent: ChildComponent }) => {
 				<Header />
 				<div className={styles.page}>
 					<NavBar navButtons={navButtons} />
-					<main
-						onScroll={e => {
-							handleSetDisplayHeader(e.target.scrollTop)
-						}}
-						className={styles.mainContainer}
-					>
+					<main className={styles.mainContainer}>
 						<ChildComponent />
 					</main>
 				</div>

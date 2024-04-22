@@ -14,10 +14,19 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
-	background-color: #fcd5ce;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
+	background-color: #fae1dd;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	height: 100vh;
+	width: 100vw;
+
+	overflow-y: scroll;
+	@media (min-width: 768px) {
+		overflow: hidden;
+	}
 }
 a {
 	text-decoration: none;
