@@ -1,57 +1,57 @@
 .main {
-  display: flex;
-  height: 100%;
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
+	display: flex;
+	height: 100%;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 }
 
 .mainContainer {
-  padding: 40px;
-  background-color: #fae1dd;
-  background-image: url("https://www.transparenttextures.com/patterns/diagonal-noise.png");
-  overflow: auto;
-  @media (max-width: 1280px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+	padding: 40px;
+	background-color: #fae1dd;
+	background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
+	overflow: auto;
+	@media (max-width: 1280px) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 
-  @media (max-width: 768px) {
-    margin-top: 0px;
-    overflow: hidden;
-  }
+	@media (max-width: 768px) {
+		margin-top: 0px;
+		overflow: hidden;
+	}
 }
 
 .page {
-  display: flex;
+	display: flex;
 
-  margin-left: 382px;
-  width: 100%;
+	margin-left: 382px;
+	width: 100%;
 
-  flex-direction: column;
+	flex-direction: column;
 
-  @media (max-width: 1600px) {
-    margin-left: 322px;
-  }
+	@media (max-width: 1600px) {
+		margin-left: 322px;
+	}
 
-  @media (max-width: 1300px) {
-    margin-left: 240px;
-  }
-  @media (max-width: 900px) {
-    margin-left: 200px;
-  }
-  @media (max-width: 768px) {
-    margin-left: 0px;
-  }
+	@media (max-width: 1300px) {
+		margin-left: 240px;
+	}
+	@media (max-width: 900px) {
+		margin-left: 200px;
+	}
+	@media (max-width: 768px) {
+		margin-left: 0px;
+	}
 }
 
 .wrapper {
-  background-color: #fae1dd;
-  background-image: url("https://www.transparenttextures.com/patterns/diagonal-noise.png");
-  height: 100vh;
-  width: 100%;
-  overflow-y: scroll;
-  @media (min-width: 768px) {
-    overflow: hidden;
-  }
+	background-color: #fae1dd;
+	background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
+	height: 100vh;
+	width: 100%;
+	overflow-y: scroll;
+	@media (min-width: 768px) {
+		overflow: hidden;
+	}
 }
